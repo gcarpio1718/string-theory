@@ -46,10 +46,26 @@ const prompt = require('prompt-sync')();
 
 //reverse function
 
-function reverse(str){  
-    let reverse = "hello";      
-     for (var i = str.length - 1; i >= 0; i--){         
-       reverse += str[i];  
-     }     
-    return reverse;
-  }
+// function reverse(str){  
+//     let reverse = "hello";      
+//      for (var i = str.length - 1; i >= 0; i--){         
+//        reverse += str[i];  
+//      }     
+//     return reverse;
+//   }
+
+//onlyVowels function//
+
+var getCount
+function getCount(str){
+    var vowelsCount=0
+    var vowels = ["a","e", "i", "o", "u"];
+    for (var i=0; i < str.length; i++){
+        for (var j=0; j <vowels.length; j++){
+            if (str[i]===vowels[j]){
+                vowels.Count++;
+            }
+        }
+    }
+    return vowelsCount;
+}
