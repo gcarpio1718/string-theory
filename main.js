@@ -39,7 +39,17 @@ const prompt = require('prompt-sync')();
 
 //repeatIt function//
 
-const makeRepeated = (arr, repeats) =>
-    Array.from({ length: repeats}, () => arr).flat();
+// const makeRepeated = (arr, repeats) =>
+//     Array.from({ length: repeats}, () => arr).flat();
 
-    console.log(makeRepeated([1,2,3], 5)); 
+//     console.log(makeRepeated(['Gio'], 5)); 
+
+//reverse function
+
+function reverse(str){  
+    let reverse = "hello";      
+     for (var i = str.length - 1; i >= 0; i--){         
+       reverse += str[i];  
+     }     
+    return reverse;
+  }
